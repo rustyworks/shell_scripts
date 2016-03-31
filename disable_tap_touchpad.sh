@@ -1,0 +1,1 @@
+synclient MaxTapTime=0
