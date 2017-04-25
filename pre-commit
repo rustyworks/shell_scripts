@@ -1,0 +1,11 @@
+#!/bin/sh
+
+grep -R 'import pdb' --exclude-dir=.git/hooks
+DEBUG_EXISTS=$?
+if [ $DEBUG_EXISTS -eq 0 ]; then
+  echo 'ada'
+  exit 1
+else
+  echo 'ga ada'
+  exit 1
+fi
