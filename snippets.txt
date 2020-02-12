@@ -1,2 +1,4 @@
 ffmpeg -i "https://www.example.com/video.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 50 file.mp4 #download m3u8 to mp4
 youtube-dl --extract-audio --audio-format mp3 https://www.example.com # extract youtube to mp3
+youtube-dl -F https://www.example.com # get list quality videos from youtube
+youtube-dl -f 18 https://www.example.com # fetch that quality
