@@ -2,3 +2,9 @@ ffmpeg -i "https://www.example.com/video.m3u8" -bsf:a aac_adtstoasc -vcodec copy
 youtube-dl --extract-audio --audio-format mp3 https://www.example.com # extract youtube to mp3
 youtube-dl -F https://www.example.com # get list quality videos from youtube
 youtube-dl -f 18 https://www.example.com # fetch that quality
+
+# mounting fd to archlinux
+lsblk -do +VENDOR,MODEL,SERIAL
+mkdir /mnt/flashdrive
+mount /dev/sdb /mnt/flashdrive
+sudo mount /dev/sdb /mnt/flashdrive
