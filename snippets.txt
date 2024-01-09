@@ -8,3 +8,7 @@ lsblk -do +VENDOR,MODEL,SERIAL
 mkdir /mnt/flashdrive
 mount /dev/sdb /mnt/flashdrive
 sudo mount /dev/sdb /mnt/flashdrive
+
+# disable sync time
+timedatectl set-ntp false
+timedatectl set-time "2024-01-09 23:14:00"
